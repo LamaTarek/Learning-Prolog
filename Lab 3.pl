@@ -9,7 +9,7 @@ goal
 	check(X).
 %--------------------------------- Area of circle -------------------------
 
-constants
+/*constants
 	pi=3.14
 predicates
 	area(real)
@@ -17,7 +17,7 @@ clauses
 	area(R):-A=R*R*pi,write("Area is ",A).
 goal
 	write("Enter radius "),readint(R),nl,
-	area(R).
+	area(R).*/
 %-------------------------------- Max of two numbers ------------------------
 
 predicates
