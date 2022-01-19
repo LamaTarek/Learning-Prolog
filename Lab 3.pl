@@ -7,7 +7,7 @@ clauses
 goal
 	write("Enter number: "),readint(X),nl,
 	check(X).
-%--------------------------------- Area of circle -----------------------
+%--------------------------------- Area of circle -------------------------
 
 constants
 	pi=3.14
@@ -18,7 +18,7 @@ clauses
 goal
 	write("Enter radius "),readint(R),nl,
 	area(R).
-%---------------------------------- Max of two numbers ------------------------
+%-------------------------------- Max of two numbers ------------------------
 
 predicates
 	max(integer,integer)
@@ -29,7 +29,7 @@ goal
 	write("Enter first number: "),readint(X),nl,
 	write("Enter second number: "),readint(Y),nl,
 	max(X,Y).
-%--------------------------------- Is char or not -------------------------------
+%--------------------------------- Is char or not ----------------------------
 
 predicates
 	check(char)
@@ -39,7 +39,7 @@ clauses
 	write("Not letter").
 goal
 	write("Enter character\n"),readchar(X),write(X),nl, check(X).
-%-------------------------------- Third digit ------------------------------
+%--------------------------------- Third digit ------------------------------
 
 predicate
 	third(integer)
@@ -58,7 +58,7 @@ clauses
 goal
 	person("Amr",X),write(x),nl,
 	person("Amr",date(M,D,Y)),write("Month: ",M,"\nDay: ",D,"\nYear: ",Y).
-%-------------------------------- cut! ----------------------------------
+%-------------------------------------- cut! ----------------------------------
 
 predicates
 	num(integer)
@@ -66,7 +66,7 @@ clauses
 	num(5):-!.
 	num(7).
 	num(10).
-%--------------------------------------------------------------------------
+%------------------------------------------------------------------------------
 
 predicates
 	num(integer)
@@ -78,7 +78,7 @@ clauses
 	letter('a').
 	letter('b').
 	print(X,Y):-num(X),letter(Y).
-%------------------------------------------------------------------------
+%------------------------------------------------------------------------------
 
 predicates
 	num(integer)
@@ -90,7 +90,7 @@ clauses
 	letter('a').
 	letter('b').
 	print(X,Y):-num(X),!,letter(Y).
-%------------------------------------------------------------------------
+%------------------------------------------------------------------------------
 
 predicates
 	num(integer)
@@ -102,7 +102,7 @@ clauses
 	letter('a').
 	letter('b').
 	print(X,Y):-num(X),letter(Y),!.
-%-----------------------------------------------------------------------
+%------------------------------------------------------------------------------
 
 predicates
 	min(integer,integer)
